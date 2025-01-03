@@ -1,6 +1,6 @@
 'use client';
-import styles from './page.module.css';
 import { useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -16,10 +16,12 @@ export default function Home() {
       <div className="container bg-white text-dark mt-5 shadow px-4 pt-4 container_box">
         <div className="row">
           <div className="col-md-4 text-center mb-4 leftside_container">
-            <img
+            <Image
               src="/Vector.png"
               alt="Payment gateway logo"
               className="img-fluid"
+              width={100}
+              height={100}
               style={{ maxHeight: '100px' }}
             />
             <h2 className="mt-2" style={{ color: "#12372A" }}>Payment gateway</h2>
@@ -61,11 +63,14 @@ export default function Home() {
                     display: 'inline-block',
                   }}
                 >
-                  <img
-                    src="/visa_icon.webp"
-                    alt="Visa"
-                    style={{ height: '30px' }}
-                  />
+                  <Link href="#">
+                    <Image
+                      src="/visa_icon.webp"
+                      alt="Visa"
+                      height={30}
+                      width={25}
+                    />
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -75,10 +80,13 @@ export default function Home() {
                     display: 'inline-block',
                   }}
                 >
-                  <img
-                    src="/stripe.png" alt="Stripe"
-                    style={{ height: '30px' }}
-                  />
+                  <Link href="#">
+                    <Image
+                      src="/stripe.png" alt="Stripe"
+                      height={30}
+                      width={20}
+                    />
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -88,10 +96,13 @@ export default function Home() {
                     display: 'inline-block',
                   }}
                 >
-                  <img
-                    src="/paypal.png" alt="PayPal"
-                    style={{ height: '30px' }}
-                  />
+                  <Link href="#">
+                    <Image
+                      src="/paypal.png" alt="PayPal"
+                      height={30}
+                      width={20}
+                    />
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -101,11 +112,14 @@ export default function Home() {
                     display: 'inline-block',
                   }}
                 >
-                  <img
-                    src="/mastercard.png"
-                    alt="MasterCard"
-                    style={{ height: '30px' }}
-                  />
+                  <Link href="#">
+                    <Image
+                      src="/mastercard.png"
+                      alt="MasterCard"
+                      height={30}
+                      width={20}
+                    />
+                  </Link>
                 </div>
                 <div
                   style={{
@@ -115,10 +129,13 @@ export default function Home() {
                     display: 'inline-block',
                   }}
                 >
-                  <img
-                    src="/gpay.png" alt="Google Pay"
-                    style={{ height: '30px' }}
-                  />
+                  <Link href="#">
+                    <Image
+                      src="/gpay.png" alt="Google Pay"
+                      height={30}
+                      width={20}
+                    />
+                  </Link>
                 </div>
               </div>
 
@@ -126,7 +143,9 @@ export default function Home() {
               <h5 className="mt-4">Card details</h5>
               <div className="row">
                 <div className="col-md-12 mb-3">
-                  <label htmlFor="cardholderName" className="form-label subTitle">Cardholder's name</label>
+                </div>
+                <div className="col-md-12 mb-3">
+                  <label htmlFor="cardholderName" className="form-label subTitle">Cardholder&apos;s name</label>
                   <input type="text" className="form-control" id="cardholderName" placeholder="Seen on your card" />
                 </div>
                 <div className="col-md-12 mb-3">
