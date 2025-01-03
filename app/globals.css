@@ -1,0 +1,46 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  outline   : 0;
+  box-sizing: border-box;
+}
+
+.card_payment_header {
+  font-size               : 64px;
+  font-weight             : 900;
+  line-height             : 84px;
+  letter-spacing          : -0.02em;
+  text-align              : center;
+  text-underline-position : from-font;
+  text-decoration-skip-ink: none;
+}
+
+.container_box {
+  border-radius: 46px 46px 0px 0px;
+}
+
+.leftside_container {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+}
+
+.allgatewayicon {
+  column-gap: 10px;
+}
+
+input::placeholder {
+  color    : #A3AED0;
+  font-size: 12px;
+}
+
+textarea::placeholder {
+  color    : #A3AED0;
+  font-size: 12px;
+}
+
+.subTitle{
+  color: #2B3674;
+  font-size: 12px;
+}
